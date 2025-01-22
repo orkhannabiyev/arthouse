@@ -6,6 +6,15 @@ import { LoginForm } from '@/components/login-form';
 import { FocusAwareStatusBar } from '@/components/ui';
 import { useAuth } from '@/lib';
 
+/**
+ * The login page.
+ *
+ * This page renders a form for logging in, and calls `signIn` from
+ * `useAuth` when the form is submitted, passing the form data.
+ *
+ * @example
+ **/
+
 export default function Login() {
   const router = useRouter();
   const signIn = useAuth.use.signIn();
